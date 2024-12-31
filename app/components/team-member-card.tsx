@@ -9,6 +9,7 @@ import {
   FaRss,
   FaLinkedinIn,
 } from "react-icons/fa6";
+import Image from "next/image";
 
 interface TeamMemberCardProps {
   userDetails: UserDetails;
@@ -29,9 +30,11 @@ export function TeamMemberCard({
       )}
     >
       <div className="w-1/3 min-w-[200px]">
-        <img
+        <Image
           src={imageUrl}
           alt={name}
+          width={200}
+          height={200}
           className="object-cover rounded-full size-[200px]"
         />
       </div>

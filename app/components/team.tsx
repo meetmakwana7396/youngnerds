@@ -10,13 +10,15 @@ export default function Team() {
         Meet The Team
       </h1>
 
-      {users.map((user, index) => (
-        <TeamMemberCard
-          key={index}
-          userDetails={user}
-          className={cn((index + 1) % 2 === 0 ? "flex-row-reverse" : "")}
-        />
-      ))}
+      <div className="space-y-6">
+        {users.map((user, index) => (
+          <TeamMemberCard
+            key={index}
+            userDetails={user}
+            className={cn((index + 1) % 2 === 0 ? "flex-row-reverse" : "")}
+          />
+        ))}
+      </div>
     </div>
   );
 }

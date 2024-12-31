@@ -8,6 +8,12 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./components/footer";
 import { ThemeProvider } from "./components/theme-switch";
 import { metaData } from "./config";
+import { Space_Grotesk } from "next/font/google";
+import { cn } from "./lib/utils";
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(metaData.baseUrl),
@@ -53,7 +59,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={cx(GeistSans.variable, GeistMono.variable)}>
+    <html lang="en" className={cn(spaceGrotesk.className)}>
       <head>
         <link
           rel="alternate"
