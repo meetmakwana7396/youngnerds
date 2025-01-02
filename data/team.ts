@@ -12,49 +12,48 @@ export interface UserDetails {
 
 export const users: UserDetails[] = [
   {
-    name: "Meet Makwana",
-    designation: "Software Engineer - Expertise in React/Frontend Development",
-    bio: "Award-winning product designer with 5+ years of experience creating innovative digital solutions. Passionate about user-centered design and accessibility.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3",
-    socials: {
-      twitter: "https://twitter.com",
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
-    },
-  },
-  {
     name: "Jaydev Jadav",
     designation: "Software Engineer - Expertise in Backend + AI Development",
     bio: "Tech enthusiast and problem solver with expertise in React and Node.js. Building scalable solutions that make a difference.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3",
+    imageUrl: "/photos/jaydev.jpeg",
     socials: {
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
+      github: "https://github.com/thejaydev",
+      linkedin: "https://www.linkedin.com/in/jaydev-b-jadav-76a59921a/",
     },
   },
+  {
+    name: "Meet Makwana",
+    designation: "Software Engineer - Expertise in React/Frontend Development",
+    bio: "Award-winning product designer with 5+ years of experience creating innovative digital solutions. Passionate about user-centered design and accessibility.",
+    imageUrl: "/photos/meet.png",
+    socials: {
+      // twitter: "https://twitter.com/meetmakwna",
+      github: "https://github.com/meetmakwana7396",
+      linkedin: "https://www.linkedin.com/in/meetmakwana7396",
+    },
+  },
+
   {
     name: "Parth Mistry",
     designation: "Software Engineer - Expertise in Backend + Devops",
     bio: "Bridging the gap between user needs and business goals. Conducted 100+ user interviews and usability testing sessions.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3",
+    imageUrl: "/photos/parth.jpeg",
     socials: {
-      twitter: "https://twitter.com",
-      linkedin: "https://linkedin.com",
+      // twitter: "https://twitter.com",
+      linkedin: "https://www.linkedin.com/in/parth-mistri-a265bb1b4/",
+      github: "https://github.com/meetmakwana7396",
+
     },
   },
   {
     name: "Krish Bhanderi",
     designation: "Software Engineer - Expertise in Backend + AI Development",
     bio: "Cloud architecture specialist focusing on AWS and Azure. Implementing CI/CD pipelines and infrastructure automation.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3",
+    imageUrl: "/photos/krish.jpeg",
     socials: {
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com",
+      github: "https://github.com/krishbhanderiii",
+      linkedin: "https://www.linkedin.com/in/krishbhanderi/",
+      // twitter: "https://twitter.com",
     },
   },
 ];

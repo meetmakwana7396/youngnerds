@@ -46,7 +46,7 @@ export function TeamMemberCard({
             <p className="text-indigo-600 font-medium">{designation}</p>
           </div>
 
-          <p className="text-gray-600 line-clamp-2">{bio}</p>
+          <p className="dark:text-gray-400 text-gray-600 line-clamp-2">{bio}</p>
 
           <div className="flex items-center justify-between pt-4">
             <Link href="#" className="dark:text-neutral-200 text-neutral-800">
@@ -55,28 +55,31 @@ export function TeamMemberCard({
 
             <div className="flex gap-4">
               {socials?.twitter && (
-                <a
+                <Link
+                  target="_blank"
                   href={socials.twitter}
                   className="text-gray-600 hover:text-indigo-600 transition-colors"
                 >
                   <FaXTwitter size={20} />
-                </a>
+                </Link>
               )}
               {socials?.github && (
-                <a
+                <Link
+                  target="_blank"
                   href={socials.github}
                   className="text-gray-600 hover:text-indigo-600 transition-colors"
                 >
                   <FaGithub size={20} />
-                </a>
+                </Link>
               )}
               {socials?.linkedin && (
-                <a
+                <Link
+                  target="_blank"
                   href={socials.linkedin}
                   className="text-gray-600 hover:text-indigo-600 transition-colors"
                 >
                   <FaLinkedinIn size={20} />
-                </a>
+                </Link>
               )}
             </div>
           </div>
